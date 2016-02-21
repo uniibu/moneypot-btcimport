@@ -92,9 +92,9 @@ function checkdb(sidx, eidx) {
         console.log("Index exceeded, Importing last index and rescanning..")
         var hdNode = bitcoinjs.HDNode.fromBase58(masterxpriv);
         var priv = hdNode.derive(eidx).keyPair.toWIF();
-        bclient.importPrivKey(priv, "", false, function (err) {
+        bclient.importPrivKey(priv, function (err) {
             if (err) return console.log(err + "index # "+ind);
-            console.log("Successfully imported.. Thank you for using me -uni")
+            console.log("Successfully imported,Client will now rescan the blockchain.. Thank you for using me -uni")
             lock = false;
             return false;
         })
