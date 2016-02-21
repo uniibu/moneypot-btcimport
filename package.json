@@ -1,0 +1,19 @@
+{
+  "name": "mpscript",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bitcoin": "^3.0.1",
+    "bitcoinjs-lib": "^2.2.0",
+    "pg": "^4.4.6",
+    "pg-promise": "^3.2.0",
+    "prompt": "^1.0.0"
+  },
+  "description": "Moneypot Bitcoin Import Tool",
+  "main": "app.js",
+  "author": "John Paul Sayo aka unibtc",
+  "license": "MIT"
+}
